@@ -120,7 +120,7 @@ After you have successfully tested your library with CUDA alone, you can move to
      DESTINATION lib)
    ```
    **NB: All changes made to the CMakeLists.txt can be found in detail in the updated CMakeLists file in the grayCam folder.**
- 7. Build and run
+ 7. Build and run (you may need to source your ROS2 installation first - failing to do so gives a "could not find a package configuration file provided by ament_cmake..." error).
     ``` bash
     cd ~/ros2_ws
     colcon build --packages-select graycameraros2 --event-handlers console_direct+
